@@ -7,10 +7,11 @@ public class Module5CriticalThinking {
 
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
-		
+		// Setup variables
 		String[] dayNames = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 		ArrayList<Double> temps = new ArrayList<Double>();
 		
+		// Get user input for daily temperatures
 		for (String day : dayNames) {
 			while (true) {
 				System.out.println("What is temperature for " + day + " as a decimal?");
@@ -27,6 +28,7 @@ public class Module5CriticalThinking {
 			}
 		}
 		
+		// Menu so user can decide what they want to see
 		String response = "";
 		while (true) {
 			System.out.println("Which day would you like to see? (Monday-Sunday/Week/Quit)");
